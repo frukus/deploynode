@@ -43,3 +43,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.set('port',process.env.PORT || 3000)
 app.listen(app.get('port'), () =>
 console.log('Aquì casual corriendo en el puerto:', app.get('port')))
+
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname, 'public/index.html'));
+});
