@@ -1,0 +1,16 @@
+1. crear una cuenta en mongo atlas
+2. ingresar y crear un cluster
+3. ir al apartado secuirity:
+  data base access / add user
+  user:frukus
+  pass:frukuss
+4. pasar  a la seccion network access
+  add ipaddress
+  allow access // confirm
+5 Ir  a cluster y dar conect
+  con tu api
+  y copiar ese link
+  mongodb+srv://frukus:<password>@tare-smxly.mongodb.net/test?retryWrites=true&w=majority
+   reemplazar lo necesario en el server.js y listo.
+6. heroku
+  
